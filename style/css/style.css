@@ -66,7 +66,6 @@ header .banner img {
 }
 
 .list-foods {
-  background-color: red;
   position: relative;
   margin: 38em auto 0 auto;
   width: 90%;
@@ -77,8 +76,8 @@ header .banner img {
   z-index: 2;
 }
 
-.list-foods p {
-  text-align: center;
-  background-color: red;
+.list-foods .section-food-GroupName {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
