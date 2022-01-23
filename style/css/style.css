@@ -2,6 +2,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   line-height: 1.5px;
+  padding: 0;
 }
 
 body {
@@ -68,21 +69,19 @@ header .banner img {
 .list-food {
   position: relative;
   margin: 38em auto 0 auto;
-  width: 90%;
   padding: 5px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   background-color: #fff;
   z-index: 2;
 }
 
 .list-food .section-food .section-food-GroupName {
+  text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  padding: 1em 0.51em;
 }
 
-.list-food .section-food .article-food {
+.list-food .section-food .section-minifoods {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,6 +89,24 @@ header .banner img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.list-food .section-food .section-minifoods .article-food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -98,15 +115,20 @@ header .banner img {
   padding: 2.2em;
 }
 
-.list-food .section-food .article-food img {
+.list-food .section-food .section-minifoods .article-food img {
   height: 17em;
 }
 
-.list-food .section-food .article-food div {
-  margin-left: 3em;
+.list-food .section-food .section-minifoods .article-food .section-food-article {
+  margin-top: 1.5em;
+  width: 100%;
 }
 
-.list-food .section-food .article-food div p {
+.list-food .section-food .section-minifoods .article-food .section-food-article h2 {
+  text-align: center;
+}
+
+.list-food .section-food .section-minifoods .article-food .section-food-article p {
   margin-top: 2em;
 }
 /*# sourceMappingURL=style.css.map */
