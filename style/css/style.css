@@ -124,7 +124,9 @@ header nav p a {
 
 .list-food .section-food .section-minifoods .article-food img {
   margin: 0 auto;
-  height: 17em;
+  height: 20em;
+  width: 30em;
+  border-radius: 40px;
 }
 
 .list-food .section-food .section-minifoods .article-food .section-food-article {
