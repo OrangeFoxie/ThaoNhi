@@ -56,7 +56,7 @@ header nav p a {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
-  z-index: 1;
+  z-index: -1;
 }
 
 .banner p {
@@ -140,5 +140,43 @@ header nav p a {
 
 .list-food .section-food .section-minifoods .article-food .section-food-article p {
   margin-top: 2em;
+}
+
+.address {
+  width: 100%;
+  margin-top: 2.4em;
+  background-color: white;
+  padding: 0;
+  z-index: 1;
+}
+
+.address-padding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.5em;
+  width: 100%;
+  padding-top: 3em;
+}
+
+.address-map {
+  z-index: inherit;
+}
+
+.address-info {
+  z-index: inherit;
+}
+
+.address-info ul li {
+  line-height: 1.5em;
 }
 /*# sourceMappingURL=style.css.map */
