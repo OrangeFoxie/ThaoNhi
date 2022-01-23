@@ -74,6 +74,10 @@ header .banner img {
   z-index: 2;
 }
 
+.list-food .section-food {
+  margin-top: 4em;
+}
+
 .list-food .section-food .section-food-GroupName {
   text-align: center;
   text-transform: uppercase;
@@ -116,12 +120,14 @@ header .banner img {
 }
 
 .list-food .section-food .section-minifoods .article-food img {
+  margin: 0 auto;
   height: 17em;
 }
 
 .list-food .section-food .section-minifoods .article-food .section-food-article {
   margin-top: 1.5em;
   width: 100%;
+  text-align: center;
 }
 
 .list-food .section-food .section-minifoods .article-food .section-food-article h2 {
