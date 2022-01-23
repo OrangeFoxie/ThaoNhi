@@ -14,6 +14,8 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 2;
+  background-color: #fff;
 }
 
 header nav {
@@ -21,6 +23,7 @@ header nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  z-index: 3;
 }
 
 header nav p {
@@ -33,7 +36,7 @@ header nav p a {
   color: black;
 }
 
-header .banner {
+.banner {
   position: fixed;
   top: 4.3em;
   width: 100%;
@@ -53,16 +56,17 @@ header .banner {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
+  z-index: 1;
 }
 
-header .banner p {
+.banner p {
   font-size: 1.5em;
   font-weight: 500;
   color: black;
   padding-bottom: 1.1em;
 }
 
-header .banner img {
+.banner img {
   height: 25rem;
 }
 
@@ -71,7 +75,7 @@ header .banner img {
   margin: 38em auto 0 auto;
   padding: 5px;
   background-color: #fff;
-  z-index: 2;
+  z-index: 1;
 }
 
 .list-food .section-food {

@@ -13,11 +13,15 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 2;
+  background-color: #fff;
 
   nav {
     padding: 6px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+
     p {
       text-align: center;
       font-size: 1.5em;
@@ -27,27 +31,28 @@ header {
       }
     }
   }
-  .banner {
-    position: fixed;
-    top: 4.3em;
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    user-select: none;
-    pointer-events: none;
+}
+.banner {
+  position: fixed;
+  top: 4.3em;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
 
-    p {
-      font-size: 1.5em;
-      font-weight: 500;
-      color: rgb(0, 0, 0);
-      padding-bottom: 1.1em;
-    }
+  p {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    padding-bottom: 1.1em;
+  }
 
-    img {
-      height: 25rem;
-    }
+  img {
+    height: 25rem;
   }
 }
 
@@ -56,10 +61,11 @@ header {
   margin: 38em auto 0 auto;
   padding: 5px;
   background-color: #fff;
-  z-index: 2;
+  z-index: 1;
 
   .section-food {
-      margin-top: 4em;
+    margin-top: 4em;
+
     .section-food-GroupName {
       text-align: center;
       text-transform: uppercase;
@@ -84,7 +90,7 @@ header {
         padding: 2.2em;
 
         img {
-            margin: 0 auto;
+          margin: 0 auto;
           height: 17em;
         }
 
@@ -92,7 +98,7 @@ header {
           margin-top: 1.5em;
           width: 100%;
           text-align: center;
-          // background-color: rgb(161, 31, 31);
+
           h2 {
             text-align: center;
           }
